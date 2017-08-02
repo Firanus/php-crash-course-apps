@@ -1,13 +1,13 @@
 version: '2'
 services:
   server:
-    image: php:7.1-apache
+    build: .
     ports:
       - "80:80"
     volumes:
       - ./:/var/www/html
     links:
-      - mysql
+      - "mysql"
 
   mysql:
     image: mysql:latest
@@ -15,3 +15,6 @@ services:
       - "3306:3306"
     environment:
       - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_DATABASE=crash
+    volumes:
+      - ./database:/var/lib/mysql
