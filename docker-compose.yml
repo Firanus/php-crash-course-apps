@@ -22,5 +22,5 @@ services:
   composer:
     image: composer
     volumes:
-      - ./:/var/www/html
+      - ./examples/mvc:/app
     command: composer install
