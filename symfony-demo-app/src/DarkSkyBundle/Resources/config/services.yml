@@ -1,0 +1,4 @@
+services:
+#    dark_sky.example:
+#        class: DarkSkyBundle\Example
+#        arguments: ["@service_id", "plain_value", "%parameter%"]
