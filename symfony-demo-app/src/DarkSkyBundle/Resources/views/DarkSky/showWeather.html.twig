@@ -1,0 +1,10 @@
+{% extends "::base.html.twig" %}
+
+{% block title %}DarkSkyBundle:DarkSky:getAllWeather{% endblock %}
+
+{% block body %}
+    <h1>Welcome to the DarkSky:showWeather page</h1>
+    <p>Summary: {{ weather.summary }}</p>
+    <p>Latitude: {{ weather.latitude }}</p>
+    <p>Longitude: {{ weather.longitude }}</p>
+{% endblock %}
